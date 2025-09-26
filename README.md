@@ -77,6 +77,16 @@ Run the tests:
 ```
 
 
-## 🎥 Demo Flow  
- 
-  
+## Demo of the app flow
+
+[📹 Watch Demo Video](./DemoFlow.mp4) - Complete walkthrough of the parcel pickup process
+
+The video demonstrates:
+- Welcome screen and network status(toggled by double clicking on cloud icon)
+- Code entry with numeric keypad
+- Backend validation process
+- Door control simulation
+- Success/error handling
+- Running tests
+
+
