@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/backspace.svg</file>
+        <file>images/backspace_fill.svg</file>
+        <file>data/mock_api.json</file>
+    </qresource>
+</RCC>
