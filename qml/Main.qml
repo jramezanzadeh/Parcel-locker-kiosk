@@ -57,5 +57,11 @@ ApplicationWindow {
         anchors.left: parent.left
         anchors.bottom: parent.bottom
         initialItem: WelcomeScreen { stackView: stack }
+        focus: true
+        Keys.onPressed: (event) => {
+            if (event.key === Qt.Key_Escape) {
+                currentItem.onEscapeKey()
+            }
+        }
     }
 }

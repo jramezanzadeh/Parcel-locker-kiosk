@@ -6,6 +6,10 @@ Item {
     property StackView stackView
     property string pin: ""
 
+    function onEscapeKey() {
+        console.log("Validating screen: Escape Key, do nothing")
+    }
+
     Rectangle {
         anchors.fill: parent
         color: "#2ecc71"

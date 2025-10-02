@@ -6,6 +6,15 @@ Item {
     property string message: ""
     property StackView stackView
 
+    function onEscapeKey() {
+        console.log("Result screen: Escape Key")
+        backScreen()
+    }
+
+    function backScreen() {
+        stackView.pop()
+    }
+
     Rectangle {
         anchors.fill: parent
         color: success ? "green" : "red"
@@ -29,7 +38,7 @@ Item {
     }
 
     Timer {
-        interval: 2000; running: true; repeat: false
-        onTriggered: stackView.pop()
+        interval: 3000; running: true; repeat: false
+        onTriggered: backScreen()
     }
 }

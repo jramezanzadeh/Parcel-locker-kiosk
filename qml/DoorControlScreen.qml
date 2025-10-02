@@ -9,6 +9,11 @@ Item {
         id: door
     }
 
+    function onEscapeKey() {
+        console.log("Door control screen: Escape Key")
+        stackView.pop()
+    }
+
     Rectangle {
         anchors.fill: parent
         color: "#2980b9"

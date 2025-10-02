@@ -5,6 +5,10 @@ import ParcelLocker
 Item {
     property StackView stackView
 
+    function onEscapeKey(){
+        console.log("Welcome screen: Escape Key, do nothing")
+    }
+
     Rectangle {
         anchors.fill: parent
         color: "#2c3e50"

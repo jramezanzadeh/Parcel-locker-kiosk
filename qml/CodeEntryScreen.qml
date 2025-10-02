@@ -7,6 +7,15 @@ Item {
     property StackView stackView
     property string enteredCode: ""
 
+    function onEscapeKey() {
+        console.log("Code entry screen: Escape Key")
+        backScreen()
+    }
+
+    function backScreen() {
+        stackView.pop()
+    }
+
     Rectangle {
         anchors.fill: parent
         color: "#34495e"
@@ -80,7 +89,7 @@ Item {
 
                 RoundButton {
                     text: "Back"
-                    onClicked: stackView.pop()
+                    onClicked: backScreen()
                     Layout.fillWidth: true
                 }
 
