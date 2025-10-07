@@ -56,9 +56,6 @@ set_target_properties(appParcelLockerKiosk PROPERTIES
 target_link_libraries(appParcelLockerKiosk
     PRIVATE Qt6::Quick
 )
-target_link_libraries(appParcelLockerKiosk PRIVATE
-    Qt6::Core
-)
 
 include(GNUInstallDirs)
 install(TARGETS appParcelLockerKiosk
